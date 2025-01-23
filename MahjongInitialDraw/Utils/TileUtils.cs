@@ -1,6 +1,7 @@
 ﻿using MahjongInitialDraw.Enums;
+using MahjongInitialDraw.Models;
 
-namespace MahjongInitialDraw;
+namespace MahjongInitialDraw.Utils;
 
 public static class TileUtils
 {

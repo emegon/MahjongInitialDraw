@@ -1,7 +1,7 @@
-﻿using MahjongInitialDraw;
-using MahjongInitialDraw.Enums;
+﻿using MahjongInitialDraw.Enums;
+using MahjongInitialDraw.Models;
 
-namespace MahjongInitialDrawTests;
+namespace MahjongInitialDrawTests.Models;
 
 [TestClass()]
 public class TileTests
