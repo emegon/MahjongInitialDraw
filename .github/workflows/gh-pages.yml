@@ -14,12 +14,10 @@ jobs:
       pages: write
 
     steps:
-      # Checkout the code
       - uses: actions/checkout@v4
         with:
           submodules: true
 
-      # Install .NET SDK
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
         with:
@@ -28,11 +26,9 @@ jobs:
       - name: Install .NET WebAssembly Tools
         run: dotnet workload install wasm-tools
 
-      # Publish the site
       - name: Publish
         run: dotnet publish MahjongInitialDraw/MahjongInitialDraw.csproj -c:Release -o:public -p:GHPages=true
 
-      # Deploy the site
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
