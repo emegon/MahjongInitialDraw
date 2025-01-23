@@ -7,6 +7,11 @@
 @code {
     private string display = string.Empty;
 
+    protected override void OnInitialized()
+    {
+        IncrementCount();
+    }
+
     private void IncrementCount()
     {
         display = string.Join(string.Empty, ShuffleItems().Take(14).Order().Select(x => TileUtils.DisplayName(x)));
