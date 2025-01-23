@@ -1,6 +1,6 @@
 ﻿namespace MahjongInitialDraw;
 
-public static class Utils
+public static class TileUtils
 {
     public static string DisplayName(int tileId)
     {
